@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-primary: #1a1a1a;
+  --accent: #CEAC54;
+  --hover-color: hsl(0, 0%, 3%);
+  --bg-primary:#1C438F;
+  --bg-dark:#00000080;
+}
+html, body {
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  
+}
+#L-main-container{
+  font-size: 62.5%;
+  word-break: keep-all;
+}
+.page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s;
+}
+
+.page:nth-child(odd) {
+  background: var(--bg-primary);
+}
+
+.page:nth-child(even), .page.review {
+   background: linear-gradient(to right, #051637,#1C438F);
+}
+.page.review.review02{
+  background:url('/images/L-sec05.png') no-repeat 80% 40%, linear-gradient(to right, #051637,#1C438F);
+
+}
+
+/* 🔵 Bulls (Dot Navigation) 스타일 */
+.bulls {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.bulls ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bulls li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bbbbbb86;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.bulls li.active {
+  background-color: var(--accent);
+  transform: scale(1.4);
+}
+
+#L-main-container {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+  font-size: 62.5%;
+  word-break: keep-all;
+}
+.L-main-h3{
+  font-family: 'Noto Sans KR';
+  font-size:4rem;
+  color: var(--accent);
+}
+.L-main-h4{
+    font-family: 'Noto Sans KR';
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.2rem
+}
+.L-main-p{
+  font-size: 1.6rem;
+  color:#fff;
+  font-weight: 300;
+
+}
+b.s-accent{
+  color: var(--accent)
+}
+span.s-accent{
+  color: var(--accent)
+}
+/* 메인슬라이드 */
+#land-slide .mySwiper {
+  width: 100%;
+  height: 100vh;
+}
+#land-slide .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+#land-slide .swiper-button-next,
+#land-slide .swiper-button-prev {
+  color: #fff;
+}
+#land-slide .swiper-pagination-bullet {
+  background: rgba(255,255,255,0.8);
+}
+.transform-bg{
+	position:absolute;
+  left:0%;
+  top:0%;
+  z-index:-1;
+	width:100%;
+  height:100vh;	
+	transform:scale(1.2);
+  transition:all 6s;
+	
+}
+.transform-bg.transform-bg01{
+  background: url('/images/Lmain01.jpg') no-repeat center center;
+  background-size: cover;
+}
+.transform-bg.transform-bg02{
+  background: url('/images/Lmain02.jpg') no-repeat center center;
+  background-size: cover;
+}
+.swiper-slide-active .transform-bg {
+  transform: scale(1); /* 정사이즈로 축소 */
+  transition:all 6s;
+  transition-delay: 3s;
+}
+#land-slide .ctr {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  z-index: 10;
+  box-sizing: border-box;
+  width: 100%;
+}
+#land-slide .ctr .vprev {
+  width: 27px;
+  height: 15px;
+  background: url('/images/vprev.png') no-repeat;
+  cursor: pointer;
+}
+#land-slide .ctr .vnext {
+  width: 27px;
+  height: 15px;
+  background: url('/images/vnext.png') no-repeat;
+  cursor: pointer;
+}
+#land-slide .ctr .vpaging {
+  position: static;
+  z-index: 100;
+  margin: 0 55px;
+  display: flex;
+  align-items: center;
+}
+/* .imgWrap {
+ transform: scale(1.1);  
+  transition: transform 4s ease;
+}*/
+
+  /*.imgWrap.swiper-slide-active >img{
+ transform: scale(1)
+  animation: crescendo 4s alternate infinite ease-in;
+};
+@keyframes crescendo {
+  0%   {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}  */
+/* 해외취업 sec02*/
+.L-broad-wrap{
+  width: 100%;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+.L-up-down-box{
+  display: flex;
+  flex-direction: column;
+  
+}
+.L-up-box-wrap, .L-down-box-wrap{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.L-up-box, .L-down-box{
+  width: calc((100% - 40px) / 3);
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.L-up-box > img, .L-down-box >img{
+  width: 100%;
+}
+.L-up-box.L-up-box3 >img {
+    border-radius: 0 80px 0 0;
+}
+.L-down-box.L-down-box1 >img {
+    border-radius: 0  0 0 80px;
+}
+.L-down-box.L-down-box3{
+  text-align: right;
+}
+/* 교육과정 sec03*/
+.edu-process-wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.process-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.opacity-box{
+  width: 100%;
+  text-align: center;
+  margin: 50px auto 0;
+}
+.opacity-box >img.opacity-text{
+  width: 75%;
+}
+.edu-class-box{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+}
+.edu-class-box > .edu-class{
+
+	-webkit-flex: 1;  /* Safari 6.1+ */
+	-ms-flex: 1;  /* IE 10 */    
+	flex: 1;
+	cursor: pointer;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.edu-class-box > .edu-class:hover{
+	-webkit-flex-grow: 2;
+	flex-grow: 2;
+}
+.edu-title{
+  color:var(--accent);
+  margin:30px auto 0;
+  text-align: center;
+}
+.edu-class.edu-class1{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/L-sec03-01.png) 50%50% no-repeat ;
+  background-size: cover;
+}
+.edu-class.edu-class2{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/L-sec03-02.jpg) 50%50% no-repeat ;
+  background-size: cover;
+}
+.edu-class.edu-class3{
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/L-sec03-03.jpg) 50%50% no-repeat ;
+  background-size: cover;
+}
+.edu-class.edu-class4{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/L-sec03-04.jpg) 50%50% no-repeat ;
+  background-size: cover;
+}
+
+.hidden-box {
+  width: 70%;
+  margin:40px auto 0;
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+  font-size:1.8rem;
+  font-weight: 300;
+  padding: 2rem;
+  color: var(--accent);
+  background-color: var(--bg-dark);
+  display: none;
+}
+.edu-class-box > .edu-class:hover .hidden-box{
+  display: block;
+}
+/* 리뷰 */
+.review-wrap {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    
+}
+.interview-title {
+    width: 90%;
+    margin: 0 auto;
+}
+.interview-grid {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.interview-card {
+    width: 25%;
+}
+.interview-card > img {
+    width: 95%;
+}
+
+/* 자랑 sec06 */
+section.page.page06{
+  background: url('/images/section6.jpg') no-repeat center center;
+  background-size: cover;
+}
+.award-wrap{
+  width: 100%;
+  max-width: 1520px;
+  display: flex;
+  flex-direction: row;
+
+}
+.award-Left{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.award-Right {
+  width: 60%;
+}
+.award-R-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.award-title{
+  font-size: 1.8rem;
+  line-height: 1.5;
+  /* font-weight: 400; */
+}
+span.thintext {
+    font-weight: 300;
+}
+ul.count-box{
+  width: 70%;
+}
+ul.count-box, ul.count-box > li{
+  list-style: none;
+}
+ul.count-box >li {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.awr-tit {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.awr-count{
+  color: var(--accent)
+}
+.awr-count > em{
+  font-size: 1.4rem;
+  color:#fff
+}
+/* 기숙사 */
+section.page.domitory-page{
+  background: url('/images/section8-bg1.jpg') 0% 50% no-repeat;
+  background-size: contain;
+}
+.domitory-wrap {
+    width: 90%;
+    max-width: 1520px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.domi-L-wrap {
+    width: 40%;
+}
+.domi-R-wrap {
+    width: 60%;
+}
+p.submini {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+/* 기숙사 내부 스와이퍼 */
+.domi-R-wrap > .swiper {
+  width: 100%;
+  /* Height will be defined by specific Swiper instances */
+}
+
+/* Common slide styles */
+.domi-R-wrap .swiper-slide { /* Changed to descendant selector for broader application */
+  text-align: center;
+  font-size: 18px;
+  /* background: #444; Remove if img covers it entirely and it's not a fallback */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* Combined with other slide styles */
+  background-position: center; /* Combined with other slide styles */
+}
+
+.domi-R-wrap .swiper-slide img { /* Changed to descendant selector */
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Specific styles for the main slider */
+.domi-R-wrap .mySwiper2 { /* Use .mySwiper2 directly for specificity */
+  width: 100%;
+  height: 50vh; /* Use this if you want it responsive to parent, otherwise use a fixed px value like 300px */
+  /* If you want 300px, comment out the 80% or remove the 80% rule */
+  /* height: 300px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Specific styles for the thumbnail slider */
+.domi-R-wrap .mySwiper3 {
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper3 .swiper-slide {
+  /* Remove or comment out width: 25%; and let JS handle based on slidesPerView */
+  /* width: 25%; */
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper3 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.domi.swiper-button-next,
+.domi.swiper-button-prev{
+  color:#fff;
+}
+
+/* 정보 연락처 */
+section.page.page08{
+  background: #fff;
+  position: relative;
+}
+.bg-bluebox{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 500px;
+  max-height: 500px;
+  background: var(--bg-primary);
+
+}
+.info-tel-wrap{
+  width: 100%;
+  height: 100vh;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+}
+.info-tel-box {
+    width: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 300px 0;
+    align-items: flex-start;
+}
+.info-text-box {
+    width: 30%;
+}
+.apply_rt {
+    position: relative;
+    width: 70%;
+
+}
+.apply_rt >ul:before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100px;
+    background: url(/images/opacity-text.png) center no-repeat;
+    background-size: 100%;
+}
+.apply_rt ul {
+    position: relative;
+    margin: 0 -10px;
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 40px);
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+}
+.apply_rt ul li {
+    /* width: 33.33%; */
+    flex: 1;
+    list-style: none;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.apply_rt ul li:hover{
+  background: var(--bg-primary);
+
+}
+
+.apply_rt ul li a {
+    display: block;
+    position: relative;
+    padding: 35px 25px 80px 40px;
+    z-index: 2;
+    overflow: hidden;
+    background: #fff;
+    text-decoration: none;
+}
+.apply_rt ul li:hover a{
+  background: var(--bg-primary);
+}
+.apply_rt ul li h3 {
+    font-size: 35px;
+    line-height: 1;
+    color: var(--bg-primary);
+    font-weight: 800;
+    margin-top: 25px;
+}
+.apply_rt ul li:hover h3{
+  color:#fff
+}
+
+.apply_rt ul li p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin: 10px 0 0;
+}
+.apply_rt ul li:hover p{
+  color:#fff
+}
+.apply_rt ul li .more_ic {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background: url(/images/main/more_ic.png) no-repeat center center;
+    background-size: contain;
+}
+.apply_rt ul li .img_wrap {
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+}
+.apply_rt ul li:hover .img_wrap{
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(53deg) brightness(105%) contrast(101%);
+
+}
+.bg-graybox{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 400px;
+  max-height: 500px;
+  background: #333;
+}
+.info-footer{
+  width: 100%;
+  max-width: 1520px;
+  position: absolute;
+  top: 100px;
+  left:50%;
+  transform: translate(-50%);
+
+}
+.L-footer-wrap {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 15px;
+    z-index: 2;
+    font-size: 1.1rem;
+    font-weight: 100;
+    width: 100%;
+    align-items: flex-start;
+}

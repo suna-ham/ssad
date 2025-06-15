@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  
+}
+
+#L-main-container {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+  font-size: 62.5%;
+}
+.L-main-h3{
+  font-family: 'Noto Sans KR';
+  font-size:4rem;
+  color: #CEAC54;
+}
+.L-main-h4{
+  font-family: 'Noto Sans KR';
+  font-size:1.6rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s;
+}
+
+.page:nth-child(odd) {
+  background: #3498db;
+}
+
+.page:nth-child(even) {
+  background: #2ecc71;
+}
