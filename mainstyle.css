@@ -40,7 +40,7 @@ html, body {
    background: linear-gradient(to right, #051637,#1C438F);
 }
 .page.review.review02{
-  background:url('/images/L-sec05.png') no-repeat 80% 40%, linear-gradient(to right, #051637,#1C438F);
+  background:url('./images/L-sec05.png') no-repeat 80% 40%, linear-gradient(to right, #051637,#1C438F);
 
 }
 
@@ -136,11 +136,11 @@ span.s-accent{
 	
 }
 .transform-bg.transform-bg01{
-  background: url('/images/Lmain01.jpg') no-repeat center center;
+  background: url('./images/Lmain01.jpg') no-repeat center center;
   background-size: cover;
 }
 .transform-bg.transform-bg02{
-  background: url('/images/Lmain02.jpg') no-repeat center center;
+  background: url('./images/Lmain02.jpg') no-repeat center center;
   background-size: cover;
 }
 .swiper-slide-active .transform-bg {
@@ -164,13 +164,13 @@ span.s-accent{
 #land-slide .ctr .vprev {
   width: 27px;
   height: 15px;
-  background: url('/images/vprev.png') no-repeat;
+  background: url('./images/vprev.png') no-repeat;
   cursor: pointer;
 }
 #land-slide .ctr .vnext {
   width: 27px;
   height: 15px;
-  background: url('/images/vnext.png') no-repeat;
+  background: url('./images/vnext.png') no-repeat;
   cursor: pointer;
 }
 #land-slide .ctr .vpaging {
@@ -277,19 +277,19 @@ span.s-accent{
   text-align: center;
 }
 .edu-class.edu-class1{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/L-sec03-01.png) 50%50% no-repeat ;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./images/L-sec03-01.png) 50%50% no-repeat ;
   background-size: cover;
 }
 .edu-class.edu-class2{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/L-sec03-02.jpg) 50%50% no-repeat ;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./images/L-sec03-02.jpg) 50%50% no-repeat ;
   background-size: cover;
 }
 .edu-class.edu-class3{
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/L-sec03-03.jpg) 50%50% no-repeat ;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/L-sec03-03.jpg) 50%50% no-repeat ;
   background-size: cover;
 }
 .edu-class.edu-class4{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/L-sec03-04.jpg) 50%50% no-repeat ;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/L-sec03-04.jpg) 50%50% no-repeat ;
   background-size: cover;
 }
 
@@ -338,7 +338,7 @@ span.s-accent{
 
 /* 자랑 sec06 */
 section.page.page06{
-  background: url('/images/section6.jpg') no-repeat center center;
+  background: url('./images/section6.jpg') no-repeat center center;
   background-size: cover;
 }
 .award-wrap{
@@ -396,7 +396,7 @@ ul.count-box >li {
 }
 /* 기숙사 */
 section.page.domitory-page{
-  background: url('/images/section8-bg1.jpg') 0% 50% no-repeat;
+  background: url('./images/section8-bg1.jpg') 0% 50% no-repeat;
   background-size: contain;
 }
 .domitory-wrap {
@@ -525,7 +525,7 @@ section.page.page08{
     transform: translateX(-50%);
     width: 100%;
     height: 100px;
-    background: url(/images/opacity-text.png) center no-repeat;
+    background: url(./images/opacity-text.png) center no-repeat;
     background-size: 100%;
 }
 .apply_rt ul {
@@ -588,7 +588,7 @@ section.page.page08{
     right: 10px;
     width: 24px;
     height: 24px;
-    background: url(/images/main/more_ic.png) no-repeat center center;
+    background: url(./images/main/more_ic.png) no-repeat center center;
     background-size: contain;
 }
 .apply_rt ul li .img_wrap {
