@@ -116,6 +116,7 @@ span.s-accent{
   align-items: center;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 #land-slide .swiper-button-next,
 #land-slide .swiper-button-prev {
@@ -179,6 +180,11 @@ span.s-accent{
   margin: 0 55px;
   display: flex;
   align-items: center;
+  font-size: 0;
+}
+#land-slide .ctr .vpaging .swiper-pagination{
+
+ position:static;
 }
 /* .imgWrap {
  transform: scale(1.1);  
