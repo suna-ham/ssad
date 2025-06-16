@@ -45,6 +45,11 @@ bulls.forEach((bull, index) => {
 
 // main slide
 
+  function mainSwiperInit () {
+    this.slides.forEach(slide => slide.classList.remove('on'))
+    this.slides[this.activeIndex].classList.add('on')
+  }
+
   const swiper = new Swiper('#land-slide .mySwiper', {
     loop: true,
     speed: 3000,
@@ -62,6 +67,10 @@ bulls.forEach((bull, index) => {
       delay: 3000,
       disableOnInteraction: false,
     },
+    on: {
+      slideChangeTransitionEnd: mainSwiperInit,
+      init: mainSwiperInit,
+    }
   });
 
 
