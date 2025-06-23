@@ -14,10 +14,11 @@ html, body {
   height: 100%;
   overflow: hidden;
   scroll-behavior: smooth;
-  
+  font-size: 62.5%;
+  font-family: 'Noto sans', sans-serif;
 }
 #L-main-container{
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   word-break: keep-all;
 }
 .page {
@@ -39,11 +40,24 @@ html, body {
 .page:nth-child(even), .page.review {
    background: linear-gradient(to right, #051637,#1C438F);
 }
-.page.review.review02{
-  background:url('./images/L-sec05.png') no-repeat 80% 40%, linear-gradient(to right, #051637,#1C438F);
-
+.page.review.review01{
+  /* background:url('./images/L-sec04.png') no-repeat right top, linear-gradient(to right, #051637,#1C438F); */
+  background: url('./images/L-sec04-bg.jpg') no-repeat;
+  background-size: cover;
 }
-
+.page.review.review02{
+  /* background:url('./images/L-sec05.png') no-repeat 80% 40%, linear-gradient(to right, #051637,#1C438F); */
+  background: url('./images/L-sec05-bg.jpg') no-repeat;
+  background-size: cover;
+}
+section.page:nth-of-type(2){
+  background: url('./images/L-sec02-bg.jpg') no-repeat;
+  background-size: cover;
+}
+section.page:nth-of-type(3){
+  background-image: url('./images/L-sec03-bg.jpg');
+  background-position: 50% -30%;
+}
 /* 🔵 Bulls (Dot Navigation) 스타일 */
 .bulls {
   position: fixed;
@@ -73,7 +87,26 @@ html, body {
   background-color: var(--accent);
   transform: scale(1.4);
 }
-
+.L-tex-box {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+}
+.L-tex-box.L-tex-box03 {
+    align-items: flex-start;
+    text-align: left;
+}
+h3.L-main-tit {
+    font-size: 4rem;
+    color: var(--accent);
+}
+p.L-main-text {
+    font-size: 2.0rem;
+    font-weight: 400;
+}
 #L-main-container {
   height: 100%;
   width: 100%;
@@ -94,9 +127,9 @@ html, body {
     letter-spacing: 0.2rem
 }
 .L-main-p{
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   color:#fff;
-  font-weight: 300;
+  font-weight: 400;
 
 }
 b.s-accent{
@@ -144,10 +177,14 @@ span.s-accent{
   background: url('./images/Lmain02.jpg') no-repeat center center;
   background-size: cover;
 }
-.swiper-slide-active .transform-bg {
+.transform-bg.transform-bg03{
+  background: url('./images/Lmain03.jpg') no-repeat center center;
+  background-size: cover;
+}
+.swiper-slide.on .transform-bg {
   transform: scale(1); /* 정사이즈로 축소 */
   transition:all 6s;
-  transition-delay: 3s;
+  /* transition-delay: 3s; */
 }
 #land-slide .ctr {
   position: absolute;
@@ -219,7 +256,7 @@ span.s-accent{
 }
 .L-up-box, .L-down-box{
   width: calc((100% - 40px) / 3);
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   font-weight: 400;
 }
 .L-up-box > img, .L-down-box >img{
@@ -317,7 +354,8 @@ span.s-accent{
 }
 /* 리뷰 */
 .review-wrap {
-    width: 70%;
+    width: 100%;
+    max-width: 1520px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -326,11 +364,12 @@ span.s-accent{
     
 }
 .interview-title {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 .interview-grid {
-    width: 90%;
+    width: 100%;
+    max-width: 1520px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -403,8 +442,8 @@ ul.count-box >li {
 }
 /* 기숙사 */
 section.page.domitory-page{
-  background: url('./images/section8-bg1.jpg') 0% 50% no-repeat;
-  background-size: contain;
+  background: url('./images/section8-bg2.jpg') 50%50% no-repeat;
+  background-size: cover;
 }
 .domitory-wrap {
     width: 90%;
@@ -421,7 +460,7 @@ section.page.domitory-page{
     width: 60%;
 }
 p.submini {
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     font-weight: 400;
 }
 /* 기숙사 내부 스와이퍼 */
@@ -496,13 +535,14 @@ section.page.page08{
   width: 100%;
   height: 500px;
   max-height: 500px;
-  background: var(--bg-primary);
+  /* background: var(--bg-primary); */
+  background: url(./images/L-sec03-bg.jpg);
 
 }
 .info-tel-wrap{
   width: 100%;
   height: 100vh;
-  max-width: 1920px;
+  max-width: 1520px;
   display: flex;
   flex-direction: column;
 }
@@ -638,3 +678,5 @@ section.page.page08{
     width: 100%;
     align-items: flex-start;
 }
+
+#land-slide .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal { position: static; font-size: 1rem; }
