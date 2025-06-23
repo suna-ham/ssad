@@ -4,10 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>samsung academy</title>
-   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="mainstyle.css" />
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="/images/aos.css" rel="stylesheet">
+  
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  
 
 </head>
 <body>
@@ -16,10 +20,27 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide imgWrap">
+            <div class="L-tex-box L-tex-box01">
+              <h3 class="L-main-tit L-main-tit01">실무의 정석, 취업율 100%<br>삼성국민취업아카데미</h3>
+              <p class="L-main-text L-main-text01">삼성SDS Brity AI RPA 기반 실무 밀착 지원으로<br>
+               기업이 찾는 실전형 인재, 여기서 만들어집니다.</p>
+            </div>
             <div class="transform-bg transform-bg01"></div>
           </div>
           <div class="swiper-slide imgWrap">
+            <div class="L-tex-box L-tex-box02">
+              <h3 class="L-main-tit L-main-tit02">전국민 무료, 숙식 제공!<br>삼성국민취업아카데미</h3>
+              <p class="L-main-text L-main-text02">청년, 중장년, 경력단절, 비전공자 누구나 도전 가능한 교육과정!<br>경제적 부담 없이 노력만으로 승부할 수 있는 기회입니다.</p>                
+            </div>          
             <div class="transform-bg transform-bg02"></div>
+          </div>
+          <div class="swiper-slide imgWrap">
+            <div class="L-tex-box L-tex-box03">
+              <h3 class="L-main-tit L-main-tit03">삼성아카데미와 함께,<br> 취업까지 완주합니다.</h3>
+              <p class="L-main-text L-main-text03">배움의 문턱은 낮게, 취업의 가능성은 높게!<br>여러분의 새로운 내일, 삼성국민취업아카데미가 함께합니다.</p>               
+            </div>            
+            <div class="transform-bg transform-bg03"></div>
+                          
           </div>
         </div>
         <div class="ctr">
@@ -120,7 +141,7 @@
         </div>
       </div>
     </section>
-    <section class="page review">
+    <section class="page review review01">
       <div class="review-wrap">
         <div class="interview-title">
           <h4 class="L-main-h4">삼성아카데미</h4>
@@ -379,6 +400,13 @@
     </ul>
   </div>
 
-  <script type="module" src="script.js"></script>
+  
+
+  
+<script src="/images/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
