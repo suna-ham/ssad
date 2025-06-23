@@ -4,6 +4,10 @@ const totalPages = pages.length;
 const bulls = document.querySelectorAll('.bulls li');
 let isScrolling = false;
 
+
+
+
+
 const updateBulls = (index) => {
   bulls.forEach((bull, i) => {
     bull.classList.toggle('active', i === index);
@@ -16,7 +20,8 @@ const scrollToPage = (pageNum) => {
   updateBulls(pageNum);
   setTimeout(() => {
     isScrolling = false;
-  }, 1000);
+    AOS.refresh();
+  }, 2000);
 };
 
 window.addEventListener('wheel', (e) => {
@@ -93,5 +98,13 @@ var swiper2 = new Swiper(".mySwiper2", {
   thumbs: {
     swiper: swiper3,
   },
-
+    autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  on: {
+  slideChangeTransitionEnd: mainSwiperInit,
+  init: mainSwiperInit,
+},
 });
+
